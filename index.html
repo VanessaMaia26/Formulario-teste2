@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de teste 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <h1>Formulário de teste</h1>
+
+    <form action="post" enctype="multipart/form-data">
+      <input type="hidden" name="country" value="BR"> <!-- hidden - escondido-->
+
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="">
+          Primeiro nome: <br />
+          <input type="text" name="name" required min="" minlength="" max=""/>
+        </label> <br>
+
+        <label for="">
+          Sobrenome: <br />
+          <input type="text" name="lastname"/>
+        </label> <br />
+
+        <label for="">
+          Email: <br />
+          <input type="email" name="email" required pattern="" title="Endereço de email"/>
+        </label> <br />
+
+        <label for="">
+          CPF: <br />
+          <input type="number" name="cpf" required />
+        </label> <br />
+
+        <label for="">
+          RG: <br />
+          <input type="number" name="identity" required />
+        </label> <br />
+
+        <label for="">
+          Data de nascimento: <br />
+          <input type="date" name="birthdate" required/>
+        </label> <br />
+
+        <label for="">
+          Foto: <br />
+          <input type="file" name="photo" required accept="image/*"/> <!--Quando utilizamos file em um form altomaticamente devemos utilizar a propiedade enctype-->
+        </label> <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados Adicionais</legend>
+        <label for="">
+          Estado: <br />
+          <input type="text" name="state" required/>
+        </label> <br />
+
+        <label for="">
+          Cidade: <br />
+          <input type="text" name="city" required/>
+        </label> <br />
+
+        <label for="">
+          Endereço: <br />
+          <input type="text" name="address" required/>
+        </label> <br />
+
+        <label for="">
+          Bairro: <br />
+          <input type="text" name="district" required />
+        </label> <br />
+
+        <label for="">
+          Número: <br />
+          <input type="number" name="number" required />
+        </label> <br />
+
+      </fieldset>
+
+      <fieldset>  
+        <legend>Dados Profissionais</legend>
+      <label for="">
+        Nome da empresa: <br />
+        <input type="text" name="companyname" required/>
+      </label> <br />
+
+      <label for="">
+        Cargo na empresa: <br />
+        <input type="text" name="companyjobtitle" required/>
+      </label> <br />
+
+      <label for="">
+        Email: <br />
+        <input type="email" name="email" required min="" minlength="" max=""/>
+      </label> <br>
+    </fieldset>
+
+      <input type="submit" value="Cadastrar" />
+    </form>
+  </body>
+</html>
